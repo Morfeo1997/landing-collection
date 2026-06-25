@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 
-import Logo from "@/assets/logo.svg";
+import Logo from "../../assets/icons/manage/logo.svg";
 
-import HeroIllustration from "@/assets/illustration-intro.svg";
+import HeroIllustration from "../../assets/images/manage/illustration-intro.svg";
 
-import AvatarAli from "@/assets/avatar-ali.png";
-import AvatarAnisha from "@/assets/avatar-anisha.png";
-import AvatarRichard from "@/assets/avatar-richard.png";
+import AvatarAli from "../../assets/images/manage/avatar-ali.png";
+import AvatarAnisha from "../../assets/images/manage/avatar-anisha.png";
+import AvatarRichard from "../../assets/images/manage/avatar-richard.png";
+// import AvatarShanai from "@assets/images/manage/AvatarShanai";
 
-import BgDesktop from "@/assets/bg-tablet-pattern.svg";
-import BgMobile from "@/assets/bg-tablet-pattern.svg";
+import BgDesktop from "../../assets/bg/manage/bg-tablet-pattern.svg";
+import BgMobile from "../../assets/bg/manage/bg-tablet-pattern.svg";
 
 export default function Main() {
   const [isOpen, setIsOpen] = useState(false);
