@@ -1,22 +1,25 @@
 import type { Project } from "../types/project";
+import Manage from "../assets/images/manage-desktop.jpg";
+import Loopstudios from "../assets/images/loopstudios-desktop.jpg";
+import Shortly from "../assets/images/shortly-desktop.jpg";
 
 export const projects: Project[] = [
   {
-    title: "Restaurant Landing",
-    image: "/images/restaurant.webp",
-    route: "/restaurant",
-    category: "Food",
+    title: "Manage Landing",
+    image: Manage,
+    route: "/manage",
+    category: "Management",
   },
   {
-    title: "Gym Landing",
-    image: "/images/gym.webp",
-    route: "/gym",
-    category: "Fitness",
+    title: "Loopstudios Landing",
+    image: Loopstudios,
+    route: "/loopstudios",
+    category: "Hardware",
   },
   {
-    title: "SaaS Landing",
-    image: "/images/saas.webp",
-    route: "/saas",
+    title: "Shortly Landing",
+    image: Shortly,
+    route: "/shortly",
     category: "Software",
   },
   {
