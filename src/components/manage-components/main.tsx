@@ -8,7 +8,7 @@ import HeroIllustration from "../../assets/images/manage/illustration-intro.svg"
 import AvatarAli from "../../assets/images/manage/avatar-ali.png";
 import AvatarAnisha from "../../assets/images/manage/avatar-anisha.png";
 import AvatarRichard from "../../assets/images/manage/avatar-richard.png";
-// import AvatarShanai from "@assets/images/manage/AvatarShanai";
+// import AvatarShanai from "../../assets/images/manage/AvatarShanai";
 
 import BgDesktop from "../../assets/bg/manage/bg-tablet-pattern.svg";
 import BgMobile from "../../assets/bg/manage/bg-tablet-pattern.svg";

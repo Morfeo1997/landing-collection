@@ -1,12 +1,9 @@
-import {
-  Facebook,
-  Youtube,
-  Twitter,
-  Instagram,
-} from "lucide-react";
-
-import Logo from "@/assets/logo-white.svg";
-import IconPinterest from "@/assets/icon-pinterest.svg";
+import Logo from "../../assets/icons/manage/logo.svg";
+import IconPinterest from "../../assets/icons/manage/icon-pinterest.svg";
+import Twitter from "../../assets/icons/manage/icon-twitter.svg";
+import Facebook from "../../assets/icons/manage/icon-facebook.svg";
+import Youtube from "../../assets/icons/manage/icon-youtube.svg";
+import Instagram from "../../assets/icons/manage/icon-instagram.svg";
 
 export default function Footer() {
   return (
@@ -37,19 +34,22 @@ export default function Footer() {
           <img src={Logo} alt="Manage" className="w-40" />
 
           <div className="flex gap-5">
-            <Facebook
-              className="cursor-pointer transition hover:text-orange-500"
-              size={22}
+            <img
+              src={Facebook}
+              alt="Facebook"
+              className="cursor-pointer transition hover:opacity-70"
             />
 
-            <Youtube
-              className="cursor-pointer transition hover:text-orange-500"
-              size={22}
+            <img
+              src={Youtube}
+              alt="Youtube"
+              className="cursor-pointer transition hover:opacity-70"
             />
 
-            <Twitter
-              className="cursor-pointer transition hover:text-orange-500"
-              size={22}
+            <img 
+              src={Twitter}
+              alt="Twitter"
+              className="cursor-pointer transition hover:opacity-70"
             />
 
             <img
@@ -58,9 +58,10 @@ export default function Footer() {
               className="cursor-pointer transition hover:opacity-70"
             />
 
-            <Instagram
-              className="cursor-pointer transition hover:text-orange-500"
-              size={22}
+            <img
+              src={Instagram}
+              alt="Instagram"
+              className="cursor-pointer transition hover:opacity-70"
             />
           </div>
         </div>
