@@ -1,6 +1,6 @@
 export default function PreFooter() {
   return (
-    <section className="relative overflow-hidden bg-orange-500">
+    <section className="relative overflow-hidden bg-manage-orange-strong">
       {/* Decoración izquierda */}
       <div
         className="
@@ -11,7 +11,7 @@ export default function PreFooter() {
           w-96
           rounded-full
           border-[60px]
-          border-orange-400/40
+          border-manage-orange-light/20
         "
       />
 
@@ -25,7 +25,7 @@ export default function PreFooter() {
           w-72
           rounded-full
           border-[50px]
-          border-orange-400/40
+          border-manage-orange-light/20 
         "
       />
 
@@ -66,7 +66,7 @@ export default function PreFooter() {
             px-8
             py-3
             font-semibold
-            text-orange-500
+            text-manage-orange-strong
             shadow-xl
             transition
             hover:scale-105

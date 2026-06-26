@@ -7,7 +7,7 @@ import Instagram from "../../assets/icons/manage/icon-instagram.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-manage-gray-strong text-white">
       <div
         className="
           mx-auto
@@ -80,25 +80,25 @@ export default function Footer() {
         >
           <ul className="space-y-4">
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Home
               </a>
             </li>
 
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Pricing
               </a>
             </li>
 
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Products
               </a>
             </li>
 
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 About Us
               </a>
             </li>
@@ -106,19 +106,19 @@ export default function Footer() {
 
           <ul className="space-y-4">
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Careers
               </a>
             </li>
 
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Community
               </a>
             </li>
 
             <li>
-              <a className="hover:text-orange-500" href="#">
+              <a className="hover:text-manage-orange-strong" href="#">
                 Privacy Policy
               </a>
             </li>
@@ -147,7 +147,7 @@ export default function Footer() {
                 px-5
                 py-3
                 text-sm
-                text-slate-800
+                text-manage-blue
                 outline-none
               "
             />
@@ -155,11 +155,11 @@ export default function Footer() {
             <button
               className="
                 rounded-full
-                bg-orange-500
+                bg--manage-orange-strong
                 px-8
                 font-semibold
                 transition
-                hover:bg-orange-400
+                hover:bg-manage-orange-strong
               "
             >
               Go
@@ -170,7 +170,7 @@ export default function Footer() {
             className="
               text-center
               text-sm
-              text-slate-400
+              text-manage-gray-light
               lg:text-right
             "
           >

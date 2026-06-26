@@ -201,7 +201,7 @@ export default function Main() {
                 text-4xl
                 font-bold
                 leading-tight
-                text-slate-900
+                text-manage-blue
                 lg:text-6xl
               "
             >
@@ -270,7 +270,7 @@ export default function Main() {
               className="
                 text-4xl
                 font-bold
-                text-slate-900
+                text-manage-blue
               "
             >
               What's different about Manage?
@@ -311,7 +311,7 @@ export default function Main() {
                     className="
                       ml-4
                       font-bold
-                      text-slate-800
+                      text-manage-blue
                     "
                   >
                     {feature.title}
@@ -343,7 +343,7 @@ export default function Main() {
             className="
               text-4xl
               font-bold
-              text-slate-900
+              text-manage-blue
             "
           >
             What they've said
@@ -387,7 +387,7 @@ export default function Main() {
                 "
               />
 
-              <h3 className="font-bold text-slate-800">
+              <h3 className="font-bold text-manage-blue">
                 {testimonial.name}
               </h3>
 
