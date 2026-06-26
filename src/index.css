@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
-html,
-body,
-#root {
-  width: 100%;
-  min-height: 100%;
-}
 
-body {
-  background: black;
+
+@theme{
+    --color-manage-orange-strong: hsl(12, 88%, 59%);
+    --color-manage-blue-manage: hsl(228, 39%, 23%);
+    --color-manage-gray-strong: hsl(233, 12%, 13%);
+    --color-manage-orange-light: hsl(13, 100%, 96%);
+    --color-manage-gray-light: hsl(0, 0%, 98%);
 }

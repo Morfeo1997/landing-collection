@@ -119,7 +119,7 @@ export default function Main() {
             className="
               hidden
               md:inline-flex
-              bg-orange-500
+              bg-manage-orange-strong
               text-white
               px-7
               py-3
@@ -225,7 +225,7 @@ export default function Main() {
               className="
                 mt-8
                 rounded-full
-                bg-orange-500
+                bg-manage-orange-strong
                 px-8
                 py-3
                 font-medium
@@ -296,7 +296,7 @@ export default function Main() {
                   <span
                     className="
                       rounded-full
-                      bg-orange-500
+                      bg-manage-orange-strong
                       px-6
                       py-2
                       text-sm
@@ -408,7 +408,7 @@ export default function Main() {
           <button
             className="
               rounded-full
-              bg-orange-500
+              bg-manage-orange-strong
               px-8
               py-3
               text-white
