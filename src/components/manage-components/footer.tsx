@@ -49,7 +49,7 @@ export default function Footer() {
             <img 
               src={Twitter}
               alt="Twitter"
-              className="cursor-pointer transition hover:opacity-70"
+              className="cursor-pointer transition hover:opacity-50"
             />
 
             <img
@@ -136,7 +136,7 @@ export default function Footer() {
             lg:items-end
           "
         >
-          <form className="flex w-full gap-4">
+          <form className="flex w-full  gap-4">
             <input
               type="email"
               placeholder="Updates in your inbox..."
@@ -156,7 +156,8 @@ export default function Footer() {
               className="
                 rounded-full
                 bg--manage-orange-strong
-                px-8
+                px-4
+                md:px-8
                 font-semibold
                 transition
                 hover:bg-manage-orange-strong

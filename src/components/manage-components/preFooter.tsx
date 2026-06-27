@@ -1,31 +1,43 @@
+import BgMobile from '../../assets/bg/manage/bg-simplify-section-mobile.svg';
+import BgDesktop from '../../assets/bg/manage/bg-simplify-section-desktop.svg'
+
 export default function PreFooter() {
   return (
-    <section className="relative overflow-hidden bg-manage-orange-strong">
-      {/* Decoración izquierda */}
-      <div
+    <section className="relative overflow-hidden bg-manage-orange-strong"
+    >
+      <img
+        src={BgDesktop}
+        alt=""
+        aria-hidden="true"
         className="
           absolute
-          -left-36
-          -bottom-24
-          h-96
-          w-96
-          rounded-full
-          border-[60px]
-          border-manage-orange-light/20
+          inset-0
+          hidden
+          h-full
+          w-full
+          object-cover
+          md:block
+          pointer-events-none
+          select-none
         "
       />
 
-      {/* Decoración derecha */}
-      <div
+      {/* Fondo Mobile */}
+      <img
+        src={BgMobile}
+        alt=""
+        aria-hidden="true"
         className="
           absolute
-          -right-24
-          -top-24
-          h-72
-          w-72
-          rounded-full
-          border-[50px]
-          border-manage-orange-light/20 
+          inset-0
+          right-0
+          left-0
+          h-full
+          w-1/2
+          object-cover
+          md:hidden
+          pointer-events-none
+          select-none
         "
       />
 
