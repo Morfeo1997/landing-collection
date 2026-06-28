@@ -1,5 +1,5 @@
-import HeroDesktop from "@/assets/image-hero-desktop.jpg";
-import HeroMobile from "@/assets/image-hero-mobile.jpg";
+import HeroDesktop from "../../assets/images/loopstudios/desktop/image-hero.jpg";
+import HeroMobile from "../../assets/images/loopstudios/mobile/image-hero.jpg";
 
 export default function Hero() {
   return (
