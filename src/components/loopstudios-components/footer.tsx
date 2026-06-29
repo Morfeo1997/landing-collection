@@ -1,17 +1,11 @@
-import Logo from "@/assets/logo.svg";
+import Logo from "../../assets/icons/loopstudios/logo.svg";
 
-import IconFacebook from "@/assets/icon-facebook.svg";
-import IconTwitter from "@/assets/icon-twitter.svg";
-import IconPinterest from "@/assets/icon-pinterest.svg";
-import IconInstagram from "@/assets/icon-instagram.svg";
+import IconFacebook from "../../assets/icons/loopstudios/icon-facebook.svg";
+import IconTwitter from "../../assets/icons/loopstudios/icon-twitter.svg";
+import IconPinterest from "../../assets/icons/loopstudios/icon-pinterest.svg";
+import IconInstagram from "../../assets/icons/loopstudios/icon-instagram.svg";
 
-const links = [
-  "About",
-  "Careers",
-  "Events",
-  "Products",
-  "Support",
-];
+const links = ["About", "Careers", "Events", "Products", "Support"];
 
 const socialLinks = [
   {
@@ -69,11 +63,7 @@ export default function Footer() {
             lg:h-40
           "
         >
-          <img
-            src={Logo}
-            alt="Loopstudios"
-            className="w-44"
-          />
+          <img src={Logo} alt="Loopstudios" className="w-44" />
 
           <div className="flex items-center gap-5">
             {socialLinks.map((social) => (
