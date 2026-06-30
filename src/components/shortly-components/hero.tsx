@@ -1,4 +1,4 @@
-import HeroDesktop from "@/assets/illustration-working.svg";
+import HeroDesktop from "../../assets/images/shortly/illustration-working.svg";
 
 export default function Hero() {
   return (
