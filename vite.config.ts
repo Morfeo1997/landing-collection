@@ -7,6 +7,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
   tailwindcss(),
-  svgr(),
-  react()],
+  svgr({
+      include: '**/*.svg', // Treats all .svg files as React components
+    }),
+  react(),
+  ],
 })

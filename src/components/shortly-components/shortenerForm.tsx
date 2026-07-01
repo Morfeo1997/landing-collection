@@ -1,7 +1,92 @@
 import BgDesktop from "../../assets/bg/shortly/bg-shorten-desktop.svg";
 import BgMobile from "../../assets/bg/shortly/bg-shorten-mobile.svg";
+import { FormEvent, useState } from "react";
+
+interface ShortenedLink {
+  original: string;
+  shortened: string;
+}
 
 export default function ShortenerForm () {
+  const [url, setUrl] = useState("");
+  const [links, setLinks] = useState<ShortenedLink[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const [copiedLink, setCopiedLink] = useState("");
+
+  async function shortenUrl(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (!url.trim()) {
+      setError("Please add a link");
+      return;
+    }
+
+    try {
+      // Validación básica
+      new URL(url);
+    } catch {
+      setError("Please enter a valid URL");
+      return;
+    }
+
+    setError("");
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://cleanuri.com/api/v1/shorten",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type":
+              "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams({
+            url,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.error) {
+        setError(data.error);
+        return;
+      }
+
+      setLinks((prev) => [
+        {
+          original: url,
+          shortened: data.result_url,
+        },
+        ...prev,
+      ]);
+
+      setUrl("");
+    } catch {
+      setError("Unable to shorten the URL.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function copyLink(link: string) {
+    try {
+      await navigator.clipboard.writeText(link);
+
+      setCopiedLink(link);
+
+      setTimeout(() => {
+        setCopiedLink("");
+      }, 2000);
+    } catch {
+      console.error("Clipboard not available");
+    }
+  }
+
+
     return(
         <>
             <div
