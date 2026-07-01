@@ -8,4 +8,20 @@
     --color-manage-gray-strong: hsl(233, 12%, 13%);
     --color-manage-orange-light: hsl(13, 100%, 96%);
     --color-manage-gray-light: hsl(0, 0%, 98%);
+    --color-loopstudios-White: hsl(0, 0%, 100%);
+	--color-loopstudios-Black: hsl(0, 0%, 0%);
+	--color-loopstudios-Grey: hsl(0, 0%, 85%);
+	--color-shortly-Blue: hsl(180, 66%, 49%);
+	--color-shortly-Purple: hsl(257, 27%, 26%);
+	--color-shortly-Red: hsl(0, 87%, 67%);
+	--color-shortly-Gray-400: hsl(0, 0%, 75%);
+	--color-shortly-Gray-500: hsl(257, 7%, 63%);
+	--color-shortly-Gray-900: hsl(255, 11%, 22%);
+	--color-shortly-Gray-950: hsl(260, 8%, 14%);
+}
+
+
+/* Ejemplo para convertir un icono a blanco */
+.icon-shortly-blue {
+	filter: invert(88%) sepia(67%) saturate(844%) hue-rotate(130deg) brightness(83%) contrast(93%);
 }

@@ -139,10 +139,7 @@ export default function Footer() {
                 src={social.icon}
                 alt={social.alt}
                 className="
-                  transition
-                  duration-300
-                  hover:brightness-0
-                  hover:invert
+                  fill-white hover:fill-blue-500 transition-colors
                 "
               />
             </a>
