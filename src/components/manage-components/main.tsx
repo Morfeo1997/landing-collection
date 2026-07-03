@@ -38,6 +38,7 @@ export default function Main() {
       process. It keeps us organized and focused.`,
     },
   ];
+  console.log(HeroIllustration);
 
   const features = [
     {
@@ -63,7 +64,7 @@ export default function Main() {
   return (
     <main className="relative overflow-hidden">
       {/* Background Decorations */}
-
+    
       <img
         src={BgDesktop}
         alt=""

@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
   tailwindcss(),
   svgr({
-      include: '**/*.svg', // Treats all .svg files as React components
+      include: "**/*.svg?react",
     }),
   react(),
   ],
