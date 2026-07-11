@@ -242,7 +242,7 @@ export default function Main() {
           <div className="order-1 lg:order-2">
             <img
               src={HeroIllustration}
-              alt=""
+              alt="Hero Illustration"
               className="w-full"
             />
           </div>
