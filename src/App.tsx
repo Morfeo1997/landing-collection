@@ -6,7 +6,7 @@ import LoopstudiosPage from "./pages/LoopstudiosPage";
 import ShortlyPage from "./pages/ShortlyPage";
 
 {/*
-	import RealEstateLanding from "./pages/RealEstateLanding";
+	import InsurePage from "./pages/InsurePage";
 
 */}
 
@@ -22,7 +22,7 @@ export default function App() {
     
         <Route path="/shortly" element={<ShortlyPage />} />
      {/*
-        <Route path="/real-estate" element={<RealEstateLanding />} />
+        <Route path="/insure" element={<InsurePage />} />
         
      */}
       </Routes>

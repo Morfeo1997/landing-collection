@@ -2,6 +2,7 @@ import type { Project } from "../types/project";
 import Manage from "../assets/images/manage-desktop.jpg";
 import Loopstudios from "../assets/images/loopstudios-desktop.jpg";
 import Shortly from "../assets/images/shortly-desktop.jpg";
+import Insure from "../assets/images/insure-desktop.jpg";
 
 export const projects: Project[] = [
   {
@@ -23,9 +24,9 @@ export const projects: Project[] = [
     category: "Software",
   },
   {
-    title: "Real Estate Landing",
-    image: "/images/real-estate.webp",
-    route: "/real-estate",
-    category: "Business",
+    title: "Insure Landing",
+    image: Insure,
+    route: "/insure",
+    category: "Insurance",
   },
 ];
