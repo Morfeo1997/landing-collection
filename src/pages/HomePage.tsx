@@ -77,8 +77,7 @@ export default function HomePage() {
               text-zinc-400
             "
           >
-            Collection of responsive landing pages built
-            with React, TypeScript and modern UI patterns.
+            Coleccion de landing pages creadas por Gastón Gómez
           </p>
         </div>
 
