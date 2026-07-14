@@ -4,11 +4,8 @@ import HomePage from "./pages/HomePage";
 import ManagePage from "./pages/ManagePage";
 import LoopstudiosPage from "./pages/LoopstudiosPage";
 import ShortlyPage from "./pages/ShortlyPage";
+import InsurePage from "./pages/InsurePage";
 
-{/*
-	import InsurePage from "./pages/InsurePage";
-
-*/}
 
 export default function App() {
   return (
@@ -21,10 +18,9 @@ export default function App() {
         <Route path="/loopstudios" element={<LoopstudiosPage />} />
     
         <Route path="/shortly" element={<ShortlyPage />} />
-     {/*
+     
         <Route path="/insure" element={<InsurePage />} />
         
-     */}
       </Routes>
     </BrowserRouter>
   );
