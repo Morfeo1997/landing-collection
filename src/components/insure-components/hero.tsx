@@ -1,11 +1,11 @@
 import HeroDesktop from "../../assets/images/insure/image-intro-desktop.jpg";
 import HeroMobile from "../../assets/images/insure/image-intro-mobile.jpg";
 
-import PatternLeftDesktop from "../../assets/images/insure/bg-pattern-intro-left-desktop.svg";
-import PatternRightDesktop from "../../assets/images/insure/bg-pattern-intro-right-desktop.svg";
+import PatternLeftDesktop from "../../assets/bg/insure/bg-pattern-intro-left-desktop.svg";
+import PatternRightDesktop from "../../assets/bg/insure/bg-pattern-intro-right-desktop.svg";
 
-import PatternLeftMobile from "../../assets/images/insure/bg-pattern-intro-left-mobile.svg";
-import PatternRightMobile from "../../assets/images/insure/bg-pattern-intro-right-mobile.svg";
+import PatternLeftMobile from "../../assets/bg/insure/bg-pattern-intro-left-mobile.svg";
+import PatternRightMobile from "../../assets/bg/insure/bg-pattern-intro-right-mobile.svg";
 
 export default function Hero() {
   return (
