@@ -1,5 +1,5 @@
-import PatternDesktop from "../../assets/images/insure/bg-pattern-how-we-work-desktop.svg";
-import PatternMobile from "../../assets/images/insure/bg-pattern-how-we-work-mobile.svg";
+import PatternDesktop from "../../assets/bg/insure/bg-pattern-how-we-work-desktop.svg";
+import PatternMobile from "../../assets/bg/insure/bg-pattern-how-we-work-mobile.svg";
 
 export default function PreFooter() {
   return (

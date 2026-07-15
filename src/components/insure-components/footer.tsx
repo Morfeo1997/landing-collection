@@ -5,8 +5,8 @@ import TwitterIcon from "../../assets/icons/insure/icon-twitter.svg";
 import PinterestIcon from "../../assets/icons/insure/icon-pinterest.svg";
 import InstagramIcon from "../../assets/icons/insure/icon-instagram.svg";
 
-import PatternDesktop from "../../assets/images/insure/bg-pattern-footer-desktop.svg";
-import PatternMobile from "../../assets/images/insure/bg-pattern-footer-mobile.svg";
+import PatternDesktop from "../../assets/bg/insure/bg-pattern-footer-desktop.svg";
+import PatternMobile from "../../assets/bg/insure/bg-pattern-footer-mobile.svg";
 
 const footerLinks = [
   {
