@@ -57,7 +57,7 @@ function Card({
         className="
           font-serif
           text-4xl
-          text-insure-dark-violet
+          text-insure-Dark-Blue
         "
       >
         {title}
@@ -69,7 +69,7 @@ function Card({
           max-w-sm
           text-[15px]
           leading-7
-          text-insure-gray-blue
+          text-insure-Blue
         "
       >
         {description}
@@ -111,7 +111,7 @@ export default function CardSection() {
             text-center
             font-serif
             text-5xl
-            text-insure-dark-violet
+            text-insure-Dark-Blue
 
             md:text-left
             md:text-7xl

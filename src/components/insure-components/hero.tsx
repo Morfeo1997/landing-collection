@@ -23,7 +23,7 @@ export default function Hero() {
 
         {/* Content */}
 
-        <div className="relative bg-insure-dark-violet px-6 py-24 text-center text-white">
+        <div className="relative bg-insure-Dark-Blue px-6 py-24 text-center text-white">
           {/* Background Patterns */}
 
           <img
@@ -63,7 +63,7 @@ export default function Hero() {
                 max-w-sm
                 text-[15px]
                 leading-7
-                text-gray-200
+                text-insure-Light-Gray
               "
             >
               Get your life insurance coverage easier and faster. We blend our
@@ -84,7 +84,7 @@ export default function Hero() {
                 tracking-[0.18rem]
                 transition
                 hover:bg-white
-                hover:text-insure-dark-violet
+                hover:text-insure-Dark-Blue
               "
             >
               View Plans
@@ -95,7 +95,7 @@ export default function Hero() {
 
       {/* ==================== DESKTOP ==================== */}
 
-      <div className="relative hidden bg-insure-dark-violet md:block">
+      <div className="relative hidden bg-insure-Dark-Blue md:block">
         {/* Background Pattern */}
 
         <img
@@ -169,7 +169,7 @@ export default function Hero() {
                 tracking-[0.2rem]
                 transition
                 hover:bg-white
-                hover:text-insure-dark-violet
+                hover:text-insure-Dark-Blue
               "
             >
               View Plans

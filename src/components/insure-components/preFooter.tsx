@@ -9,7 +9,7 @@ export default function PreFooter() {
           relative
           mx-auto
           overflow-hidden
-          bg-insure-dark-violet
+          bg-insure-Dark-Blue
           px-8
           py-18
 
@@ -96,7 +96,7 @@ export default function PreFooter() {
               transition
 
               hover:bg-white
-              hover:text-insure-dark-violet
+              hover:text-insure-Dark-Blue
             "
           >
             How We Work

@@ -70,7 +70,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-insure-light-gray">
+    <footer className="relative overflow-hidden bg-insure-Light-Gray">
       {/* Background Pattern */}
 
       <img
@@ -151,7 +151,7 @@ export default function Footer() {
                   font-bold
                   uppercase
                   tracking-[0.18rem]
-                  text-insure-gray-blue
+                  text-insure-Blue
                 "
               >
                 {section.title}
@@ -167,7 +167,7 @@ export default function Footer() {
                         font-bold
                         uppercase
                         tracking-[0.12rem]
-                        text-insure-dark-violet
+                        text-insure-Dark-Blue
                         transition
                         hover:underline
                       "

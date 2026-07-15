@@ -44,9 +44,9 @@ export default function Header() {
                 font-bold
                 uppercase
                 tracking-[0.15rem]
-                text-insure-gray-blue
+                text-insure-Blue
                 transition-colors
-                hover:text-insure-dark-violet
+                hover:text-insure-Dark-Blue
               "
             >
               {link.label}
@@ -56,16 +56,16 @@ export default function Header() {
           <button
             className="
               border-2
-              border-insure-dark-violet
+              border-insure-Dark-Blue
               px-7
               py-3
               text-xs
               font-bold
               uppercase
               tracking-[0.15rem]
-              text-insure-dark-violet
+              text-insure-Dark-Blue
               transition
-              hover:bg-insure-dark-violet
+              hover:bg-insure-Dark-Blue
               hover:text-white
             "
           >
@@ -84,7 +84,7 @@ export default function Header() {
             items-center
             justify-center
             border-2
-            border-insure-dark-violet
+            border-insure-Dark-Blue
             md:hidden
           "
         >
@@ -105,7 +105,7 @@ export default function Header() {
           top-full
           w-full
           overflow-hidden
-          bg-insure-dark-violet
+          bg-insure-Dark-Blue
           transition-all
           duration-300
 
@@ -157,7 +157,7 @@ export default function Header() {
               text-white
               transition
               hover:bg-white
-              hover:text-insure-dark-violet
+              hover:text-insure-Dark-Blue
             "
           >
             View Plans
