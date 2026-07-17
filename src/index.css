@@ -23,6 +23,18 @@
 	--color-insure-Darker-Gray: hsl(270, 9%, 17%);
 	--color-insure-Dark-Gray: hsl(273, 4%, 51%);
 	--color-insure-Light-Gray: hsl(0, 0%, 98%);
+	--color-blogr-Red-500: hsl(356, 100%, 66%);
+	--color-blogr-Red-400: hsl(355, 100%, 74%);
+	--color-blogr-Blue-900: hsl(208, 49%, 24%);
+	--color-blogr-White: hsl(0, 100%, 100%);
+	--color-blogr-Gray-600: hsl(207, 13%, 34%);
+	--color-blogr-Gray-900: hsl(240, 10%, 16%);
+//gradient
+	--color-blogr-Orange-300: hsl(13, 100%, 72%);
+	--color-blogr-Red-550: hsl(353, 100%, 62%);
+	--color-blogr-Purple-950: hsl(237, 17%, 21%);
+	--color-blogr-Purple-900: hsl(237, 23%, 31%);
+
 
 }
 
