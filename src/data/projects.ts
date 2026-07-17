@@ -3,6 +3,7 @@ import Manage from "../assets/images/manage-desktop.jpg";
 import Loopstudios from "../assets/images/loopstudios-desktop.jpg";
 import Shortly from "../assets/images/shortly-desktop.jpg";
 import Insure from "../assets/images/insure-desktop.jpg";
+import Blogr from "../assets/images/blogr-desktop.jpg";
 
 export const projects: Project[] = [
   {
@@ -28,5 +29,11 @@ export const projects: Project[] = [
     image: Insure,
     route: "/insure",
     category: "Insurance",
+  },
+  {
+    title: "Blogr Landing",
+    image: Blogr,
+    route: "/blogr",
+    category: "Software",
   },
 ];

@@ -5,6 +5,7 @@ import ManagePage from "./pages/ManagePage";
 import LoopstudiosPage from "./pages/LoopstudiosPage";
 import ShortlyPage from "./pages/ShortlyPage";
 import InsurePage from "./pages/InsurePage";
+import BlogrPage from "./pages/BlogrPage";
 
 
 export default function App() {
@@ -20,6 +21,8 @@ export default function App() {
         <Route path="/shortly" element={<ShortlyPage />} />
      
         <Route path="/insure" element={<InsurePage />} />
+        
+        <Route path="/blogr" element={<BlogrPage />} />
         
       </Routes>
     </BrowserRouter>

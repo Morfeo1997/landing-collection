@@ -29,11 +29,10 @@
 	--color-blogr-White: hsl(0, 100%, 100%);
 	--color-blogr-Gray-600: hsl(207, 13%, 34%);
 	--color-blogr-Gray-900: hsl(240, 10%, 16%);
-//gradient
-	--color-blogr-Orange-300: hsl(13, 100%, 72%);
-	--color-blogr-Red-550: hsl(353, 100%, 62%);
-	--color-blogr-Purple-950: hsl(237, 17%, 21%);
-	--color-blogr-Purple-900: hsl(237, 23%, 31%);
+	--color-blogr-gradient-Orange-300: hsl(13, 100%, 72%);
+	--color-blogr-gradient-Red-550: hsl(353, 100%, 62%);
+	--color-blogr-gradient-Purple-950: hsl(237, 17%, 21%);
+	--color-blogr-gradient-Purple-900: hsl(237, 23%, 31%);
 
 
 }
