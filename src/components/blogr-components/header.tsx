@@ -80,9 +80,9 @@ export default function Header() {
                 py-3
                 text-sm
                 font-semibold
-                text-blogr-red
+                text-blogr-Red-500
                 transition
-                hover:bg-blogr-light-red
+                hover:bg-blogr-Red-400
                 hover:text-white
               "
             >
@@ -140,14 +140,14 @@ export default function Header() {
                 py-4
                 text-lg
                 font-semibold
-                text-blogr-dark-blue
+                text-blogr-Blue-900
               "
             >
               {item.label}
 
               <ChevronDown
                 size={18}
-                className="text-blogr-red"
+                className="text-blogr-Red-500"
               />
             </button>
           ))}
@@ -171,8 +171,8 @@ export default function Header() {
               mt-4
               rounded-full
               bg-gradient-to-r
-              from-blogr-light-red
-              to-blogr-red
+              from-blogr-Red-400
+              to-blogr-Red-500
               px-10
               py-3
               font-semibold

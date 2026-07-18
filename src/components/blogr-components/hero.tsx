@@ -9,8 +9,8 @@ export default function Hero() {
         overflow-hidden
         rounded-bl-[6rem]
         bg-gradient-to-br
-        from-blogr-light-red
-        to-blogr-red
+        from-blogr-Red-400
+        to-blogr-Red-500
       "
     >
       {/* Background Pattern Desktop */}
@@ -120,9 +120,9 @@ export default function Hero() {
               px-8
               py-3
               font-semibold
-              text-blogr-red
+              text-blogr-Red-500
               transition
-              hover:bg-blogr-light-red
+              hover:bg-blogr-Red-400
               hover:text-white
             "
           >
@@ -140,7 +140,7 @@ export default function Hero() {
               text-white
               transition
               hover:bg-white
-              hover:text-blogr-red
+              hover:text-blogr-Red-500
             "
           >
             Learn More

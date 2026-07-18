@@ -6,7 +6,7 @@ import PhonesIllustration from "../../assets/images/blogr/illustration-phones.sv
 import LaptopDesktop from "../../assets/images/blogr/illustration-laptop-desktop.svg";
 import LaptopMobile from "../../assets/images/blogr/illustration-laptop-mobile.svg";
 
-import CirclesPattern from "../../assets/images/blogr/bg-pattern-circles.svg";
+import CirclesPattern from "../../assets/bg/blogr/bg-pattern-circles.svg";
 
 export default function Main() {
   return (
@@ -16,7 +16,7 @@ export default function Main() {
       {/* ========================================================= */}
 
       <section className="relative mx-auto max-w-7xl px-6 py-28 lg:px-8">
-        <h2 className="mb-20 text-center text-4xl font-semibold text-blogr-dark-blue md:text-5xl">
+        <h2 className="mb-20 text-center text-4xl font-semibold text-blogr-Blue-900 md:text-5xl">
           Designed for the future
         </h2>
 
@@ -33,11 +33,11 @@ export default function Main() {
 
           <div className="order-2 space-y-14 text-center lg:order-1 lg:text-left">
             <article>
-              <h3 className="mb-6 text-3xl font-semibold text-blogr-dark-blue">
+              <h3 className="mb-6 text-3xl font-semibold text-blogr-Blue-900">
                 Introducing an extensible editor
               </h3>
 
-              <p className="leading-8 text-blogr-body">
+              <p className="leading-8 text-blogr-Gray-600">
                 Blogr features an exceedingly intuitive interface which lets
                 you focus on one thing: creating content. The editor supports
                 management of multiple blogs and allows easy manipulation of
@@ -48,11 +48,11 @@ export default function Main() {
             </article>
 
             <article>
-              <h3 className="mb-6 text-3xl font-semibold text-blogr-dark-blue">
+              <h3 className="mb-6 text-3xl font-semibold text-blogr-Blue-900">
                 Robust content management
               </h3>
 
-              <p className="leading-8 text-blogr-body">
+              <p className="leading-8 text-blogr-Gray-600">
                 Flexible content management enables users to easily move through
                 posts. Increase the usability of your blog by adding customized
                 categories, sections, format, or flow. With this functionality,
@@ -84,7 +84,7 @@ export default function Main() {
             overflow-hidden
             rounded-tr-[6rem]
             rounded-bl-[6rem]
-            bg-blogr-dark-bg
+            bg-blogr-Gray-900
           "
         >
           {/* Pattern */}
@@ -182,11 +182,11 @@ export default function Main() {
 
           <div className="space-y-16 text-center lg:text-left">
             <article>
-              <h3 className="mb-6 text-3xl font-semibold text-blogr-dark-blue">
+              <h3 className="mb-6 text-3xl font-semibold text-blogr-Blue-900">
                 Free, open, simple
               </h3>
 
-              <p className="leading-8 text-blogr-body">
+              <p className="leading-8 text-blogr-Gray-600">
                 Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as
                 code syntax highlighting, RSS feeds, social media integration,
@@ -197,11 +197,11 @@ export default function Main() {
             </article>
 
             <article>
-              <h3 className="mb-6 text-3xl font-semibold text-blogr-dark-blue">
+              <h3 className="mb-6 text-3xl font-semibold text-blogr-Blue-900">
                 Powerful tooling
               </h3>
 
-              <p className="leading-8 text-blogr-body">
+              <p className="leading-8 text-blogr-Gray-600">
                 Batteries included. We built a simple and straightforward CLI
                 tool that makes customization and deployment a breeze, but
                 capable of producing even the most complicated sites.
