@@ -9,7 +9,7 @@ export default function Footer() {
     <footer
       className="
         rounded-tr-[6rem]
-        bg-blogr-footer
+        bg-blogr-Gray-900
         py-20
         text-white
       "
