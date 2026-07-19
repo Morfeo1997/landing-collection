@@ -1,5 +1,4 @@
 import Logo from "../../assets/icons/blogr/logo.svg";
-
 import Facebook from "../../assets/icons/blogr/icon-facebook.svg";
 import Twitter from "../../assets/icons/blogr/icon-twitter.svg";
 import Pinterest from "../../assets/icons/blogr/icon-pinterest.svg";
