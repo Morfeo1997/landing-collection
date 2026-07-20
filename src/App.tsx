@@ -6,6 +6,7 @@ import LoopstudiosPage from "./pages/LoopstudiosPage";
 import ShortlyPage from "./pages/ShortlyPage";
 import InsurePage from "./pages/InsurePage";
 import BlogrPage from "./pages/BlogrPage";
+import DigitalBankPage from "./pages/DigitalBankPage";
 
 
 export default function App() {
@@ -23,6 +24,8 @@ export default function App() {
         <Route path="/insure" element={<InsurePage />} />
         
         <Route path="/blogr" element={<BlogrPage />} />
+        
+        <Route path="/digitalBank" element={<DigitalBankPage />} />
         
       </Routes>
     </BrowserRouter>

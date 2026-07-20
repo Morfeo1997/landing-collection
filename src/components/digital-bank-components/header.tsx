@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import Logo from "../../assets/icons/digitalbank/logo.svg";
+import Logo from "../../assets/icons/digitalbank/logo-dark.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
