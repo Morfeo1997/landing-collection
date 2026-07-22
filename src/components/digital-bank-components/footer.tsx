@@ -1,4 +1,4 @@
-import Logo from "../../assets/icons/digitalbank/logo-white.svg";
+import Logo from "../../assets/icons/digitalbank/logo-light.svg";
 
 import FacebookIcon from "../../assets/icons/digitalbank/icon-facebook.svg";
 import YoutubeIcon from "../../assets/icons/digitalbank/icon-youtube.svg";
