@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-digitalbank-footer py-16">
+    <footer className="bg-digitalBank-Blue-950 py-16">
       <div
         className="
           mx-auto
@@ -108,7 +108,7 @@ export default function Footer() {
               className="
                 text-white
                 transition
-                hover:text-digitalbank-lime
+                hover:text-digitalBank-Green-500
               "
             >
               {item}
@@ -125,8 +125,8 @@ export default function Footer() {
             className="
               rounded-full
               bg-gradient-to-r
-              from-digitalbank-lime
-              to-digitalbank-cyan
+              from-digitalBank-Green-500
+              to-digitalBank-Cyan-400
               px-8
               py-3
               font-semibold
@@ -142,7 +142,7 @@ export default function Footer() {
             className="
               mt-8
               text-sm
-              text-digitalbank-grayish-blue
+              text-digitalBank-Gray-600
             "
           >
             © Digitalbank. All Rights Reserved

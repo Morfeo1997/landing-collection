@@ -8,7 +8,7 @@ export default function Hero() {
       className="
         relative
         overflow-hidden
-        bg-digitalbank-very-light-gray
+        bg-digitalBank-Gray-100
       "
     >
       <div
@@ -109,7 +109,7 @@ export default function Hero() {
               text-5xl
               leading-tight
               font-light
-              text-digitalbank-dark-blue
+              text-digitalBank-Blue-950
 
               md:text-6xl
             "
@@ -124,7 +124,7 @@ export default function Hero() {
               mt-8
               text-lg
               leading-8
-              text-digitalbank-grayish-blue
+              text-digitalBank-Gray-600
             "
           >
             Take your financial life online. Your Digitalbank account will be a
@@ -137,8 +137,8 @@ export default function Hero() {
               mt-10
               rounded-full
               bg-gradient-to-r
-              from-digitalbank-lime
-              to-digitalbank-cyan
+              from-digitalBank-Green-500
+              to-digitalBank-Cyan-400
               px-9
               py-4
               font-semibold

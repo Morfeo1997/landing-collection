@@ -76,11 +76,11 @@ export default function Main() {
       <section className="bg-digitalbank-light-gray py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl text-center md:text-left">
-            <h2 className="text-4xl font-light text-digitalbank-dark-blue">
+            <h2 className="text-4xl font-light text-digitalBank-Blue-950">
               Why choose Digitalbank?
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-digitalbank-grayish-blue">
+            <p className="mt-6 text-lg leading-8 text-digitalBank-Gray-600">
               We leverage Open Banking to turn your bank account into your
               financial hub. Control your finances like never before.
             </p>
@@ -98,11 +98,11 @@ export default function Main() {
                   className="mx-auto h-18 w-18 md:mx-0"
                 />
 
-                <h3 className="mt-10 text-3xl font-light text-digitalbank-dark-blue">
+                <h3 className="mt-10 text-3xl font-light text-digitalBank-Blue-950">
                   {feature.title}
                 </h3>
 
-                <p className="mt-6 leading-8 text-digitalbank-grayish-blue">
+                <p className="mt-6 leading-8 text-digitalBank-Gray-600">
                   {feature.description}
                 </p>
               </article>
@@ -117,7 +117,7 @@ export default function Main() {
 
       <section className="bg-digitalbank-very-light-gray py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-4xl font-light text-digitalbank-dark-blue md:text-left">
+          <h2 className="text-center text-4xl font-light text-digitalBank-Blue-950 md:text-left">
             Latest Articles
           </h2>
 
@@ -142,7 +142,7 @@ export default function Main() {
                 />
 
                 <div className="p-7">
-                  <p className="text-xs text-digitalbank-grayish-blue">
+                  <p className="text-xs text-digitalBank-Gray-600">
                     {article.author}
                   </p>
 
@@ -151,15 +151,15 @@ export default function Main() {
                       mt-4
                       text-xl
                       font-light
-                      text-digitalbank-dark-blue
+                      text-digitalBank-Blue-950
                       transition
-                      hover:text-digitalbank-lime
+                      hover:text-digitalBank-Green-500
                     "
                   >
                     <a href="#">{article.title}</a>
                   </h3>
 
-                  <p className="mt-4 text-sm leading-7 text-digitalbank-grayish-blue">
+                  <p className="mt-4 text-sm leading-7 text-digitalBank-Gray-600">
                     {article.description}
                   </p>
                 </div>
