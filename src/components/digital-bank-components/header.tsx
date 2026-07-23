@@ -39,9 +39,9 @@ export default function Header() {
                 py-8
                 text-sm
                 font-medium
-                text-digitalbank-grayish-blue
+                text-digitalBank-Gray-600
                 transition
-                hover:text-digitalbank-dark-blue
+                hover:text-digitalBank-Blue-950
 
                 after:absolute
                 after:bottom-0
@@ -50,8 +50,8 @@ export default function Header() {
                 after:w-0
                 after:rounded-full
                 after:bg-gradient-to-r
-                after:from-digitalbank-lime
-                after:to-digitalbank-cyan
+                after:from-digitalBank-Green-500
+                after:to-digitalBank-Cyan-400
                 after:transition-all
 
                 hover:after:w-full
@@ -69,8 +69,8 @@ export default function Header() {
             hidden
             rounded-full
             bg-gradient-to-r
-            from-digitalbank-lime
-            to-digitalbank-cyan
+            from-digitalBank-Green-500
+            to-digitalBank-Cyan-400
             px-8
             py-3
             text-sm
@@ -124,9 +124,9 @@ export default function Header() {
               className="
                 text-lg
                 font-medium
-                text-digitalbank-dark-blue
+                text-digitalBank-Blue-950
                 transition
-                hover:text-digitalbank-lime
+                hover:text-digitalBank-Green-500
               "
             >
               {item.label}
