@@ -17,7 +17,7 @@ export default function HomePage() {
         className="
           absolute
           inset-0
-          bg-[radial-gradient(circle_at_center,rgba(80,80,80,0.35)_0%,rgba(20,20,20,0.8)_45%,rgba(0,0,0,1)_100%)]
+          bg-[radial-gradient(circle_at_center,rgba(80,80,80,0.35)_0%,rgba(20,20,60,0.8)_45%,rgba(0,0,0,1)_100%)]
         "
       />
 
@@ -77,7 +77,7 @@ export default function HomePage() {
               text-zinc-400
             "
           >
-            Coleccion de landing pages creadas por Gastón Gómez
+            Coleccion de landing pages creadas por <a className="text-blue-700 font-bold hover:text-blue-500 transition-colors duration-300" target="_blank" href="https://gaston-gomez1997.netlify.app">Gastón Gómez</a>
           </p>
         </div>
 
