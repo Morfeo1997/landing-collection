@@ -1,11 +1,5 @@
 import Logo from "../../assets/icons/digitalbank/logo-light.svg";
 
-import FacebookIcon from "../../assets/icons/digitalbank/icon-facebook.svg";
-import YoutubeIcon from "../../assets/icons/digitalbank/icon-youtube.svg";
-import TwitterIcon from "../../assets/icons/digitalbank/icon-twitter.svg";
-import PinterestIcon from "../../assets/icons/digitalbank/icon-pinterest.svg";
-import InstagramIcon from "../../assets/icons/digitalbank/icon-instagram.svg";
-
 export default function Footer() {
   const navigation = [
     "About Us",
@@ -16,28 +10,6 @@ export default function Footer() {
     "Privacy Policy",
   ];
 
-  const socials = [
-    {
-      icon: FacebookIcon,
-      alt: "Facebook",
-    },
-    {
-      icon: YoutubeIcon,
-      alt: "YouTube",
-    },
-    {
-      icon: TwitterIcon,
-      alt: "Twitter",
-    },
-    {
-      icon: PinterestIcon,
-      alt: "Pinterest",
-    },
-    {
-      icon: InstagramIcon,
-      alt: "Instagram",
-    },
-  ];
 
   return (
     <footer className="bg-digitalBank-Blue-950 py-16">
@@ -141,7 +113,7 @@ export default function Footer() {
           <button
             className="
               rounded-full
-              bg-gradient-to-r
+              bg-linear-to-r
               from-digitalBank-Green-500
               to-digitalBank-Cyan-400
               px-8

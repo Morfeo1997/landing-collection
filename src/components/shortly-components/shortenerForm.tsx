@@ -1,23 +1,30 @@
 import BgDesktop from "../../assets/bg/shortly/bg-shorten-desktop.svg";
 import BgMobile from "../../assets/bg/shortly/bg-shorten-mobile.svg";
+
 import { useState } from "react";
-import type {FormEvent} from "react";
+import type { FormEvent } from "react";
 
 interface ShortenedLink {
   original: string;
   shortened: string;
 }
 
-export default function ShortenerForm () {
+interface CleanURIResponse {
+  result_url?: string;
+  error?: string;
+}
+
+export default function ShortenerForm() {
   const [url, setUrl] = useState("");
   const [links, setLinks] = useState<ShortenedLink[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
   const [copiedLink, setCopiedLink] = useState("");
 
   async function shortenUrl(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    setError("");
 
     if (!url.trim()) {
       setError("Please add a link");
@@ -25,14 +32,12 @@ export default function ShortenerForm () {
     }
 
     try {
-      // Validación básica
       new URL(url);
     } catch {
       setError("Please enter a valid URL");
       return;
     }
 
-    setError("");
     setLoading(true);
 
     try {
@@ -41,32 +46,40 @@ export default function ShortenerForm () {
         {
           method: "POST",
           headers: {
-            "Content-Type":
-              "application/x-www-form-urlencoded",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
           body: new URLSearchParams({
-            url,
+            url: url.trim(),
           }),
         }
       );
 
-      const data = await response.json();
+      if (!response.ok) {
+        throw new Error("Unable to shorten the URL.");
+      }
+
+      const data: CleanURIResponse = await response.json();
 
       if (data.error) {
         setError(data.error);
         return;
       }
 
-      setLinks((prev) => [
-        {
-          original: url,
-          shortened: data.result_url,
-        },
-        ...prev,
-      ]);
+      if (!data.result_url) {
+        setError("Unable to shorten the URL.");
+        return;
+      }
+
+      const newLink: ShortenedLink = {
+        original: url.trim(),
+        shortened: data.result_url,
+      };
+
+      setLinks((prev) => [newLink, ...prev]);
 
       setUrl("");
-    } catch {
+    } catch (error) {
+      console.error(error);
       setError("Unable to shorten the URL.");
     } finally {
       setLoading(false);
@@ -82,104 +95,233 @@ export default function ShortenerForm () {
       setTimeout(() => {
         setCopiedLink("");
       }, 2000);
-    } catch {
-      console.error("Clipboard not available");
+    } catch (error) {
+      console.error("Clipboard not available", error);
     }
   }
 
+  return (
+    <section className="relative">
+      {/* =========================
+          Shortener
+      ========================== */}
 
-    return(
-        <>
-            <div
-            className="
-            absolute
-            bottom-0
-            left-1/2
-            z-20
-            w-full
-            max-w-7xl
-            -translate-x-1/2
-            translate-y-1/2
-            px-6
-            "
+      <div
+        className="
+          absolute
+          bottom-0
+          left-1/2
+          z-20
+          w-full
+          max-w-7xl
+          -translate-x-1/2
+          translate-y-1/2
+          px-6
+        "
+      >
+        <div
+          className="
+            relative
+            overflow-hidden
+            rounded-xl
+            bg-[#3b3054]
+            p-6
+            md:p-10
+          "
         >
-            <div className="relative overflow-hidden rounded-xl bg-[#3b3054] p-6 md:p-10">
-            {/* Background Desktop */}
+          {/* Desktop background */}
 
-            <img
-                src={BgDesktop}
-                alt=""
-                aria-hidden="true"
+          <img
+            src={BgDesktop}
+            alt=""
+            aria-hidden="true"
+            className="
+              absolute
+              inset-0
+              hidden
+              h-full
+              w-full
+              object-cover
+              md:block
+            "
+          />
+
+          {/* Mobile background */}
+
+          <img
+            src={BgMobile}
+            alt=""
+            aria-hidden="true"
+            className="
+              absolute
+              inset-0
+              h-full
+              w-full
+              object-cover
+              md:hidden
+            "
+          />
+
+          {/* Form */}
+
+          <form
+            onSubmit={shortenUrl}
+            className="
+              relative
+              z-10
+              flex
+              flex-col
+              gap-4
+              md:flex-row
+            "
+          >
+            <div className="flex-1">
+              <input
+                type="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder="Shorten a link here..."
+                disabled={loading}
                 className="
-                absolute
-                inset-0
-                hidden
-                h-full
-                w-full
-                object-cover
-                md:block
+                  h-14
+                  w-full
+                  rounded-lg
+                  bg-white
+                  px-5
+                  text-gray-700
+                  outline-none
+                  placeholder:text-gray-400
+                  disabled:cursor-not-allowed
+                  disabled:opacity-70
                 "
-            />
+              />
 
-            {/* Background Mobile */}
+              {error && (
+                <p className="mt-2 text-sm italic text-red-300">
+                  {error}
+                </p>
+              )}
+            </div>
 
-            <img
-                src={BgMobile}
-                alt=""
-                aria-hidden="true"
-                className="
-                absolute
-                inset-0
-                h-full
-                w-full
-                object-cover
-                md:hidden
-                "
-            />
+            <button
+              type="submit"
+              disabled={loading}
+              className="
+                h-14
+                rounded-lg
+                bg-cyan-400
+                px-10
+                font-bold
+                text-white
+                transition
+                hover:bg-cyan-300
+                disabled:cursor-not-allowed
+                disabled:opacity-60
+              "
+            >
+              {loading ? "Shortening..." : "Shorten It!"}
+            </button>
+          </form>
+        </div>
+      </div>
 
-            <form
-                className="
-                relative
-                z-10
+      {/* =========================
+          Shortened links
+      ========================== */}
+
+      {links.length > 0 && (
+        <div
+          className="
+            mx-auto
+            flex
+            max-w-7xl
+            flex-col
+            gap-4
+            px-6
+            pb-10
+            pt-32
+          "
+        >
+          {links.map((link) => (
+            <div
+              key={`${link.original}-${link.shortened}`}
+              className="
                 flex
                 flex-col
                 gap-4
-
+                rounded-lg
+                bg-white
+                p-5
+                shadow-md
                 md:flex-row
-                "
+                md:items-center
+                md:justify-between
+              "
             >
-                <input
-                type="text"
-                placeholder="Shorten a link here..."
-                className="
-                    h-14
-                    flex-1
-                    rounded-lg
-                    bg-white
-                    px-5
-                    outline-none
+              {/* Original URL */}
 
-                    placeholder:text-gray-400
+              <p
+                className="
+                  max-w-full
+                  overflow-hidden
+                  text-ellipsis
+                  whitespace-nowrap
+                  text-gray-700
+                  md:max-w-[50%]
                 "
-                />
+              >
+                {link.original}
+              </p>
+
+              {/* Shortened URL + copy */}
+
+              <div
+                className="
+                  flex
+                  flex-col
+                  gap-3
+                  md:flex-row
+                  md:items-center
+                "
+              >
+                <a
+                  href={link.shortened}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    text-cyan-500
+                    hover:text-cyan-400
+                  "
+                >
+                  {link.shortened}
+                </a>
 
                 <button
-                className="
-                    h-14
+                  type="button"
+                  onClick={() => copyLink(link.shortened)}
+                  className={`
                     rounded-lg
-                    bg-cyan-400
-                    px-10
+                    px-6
+                    py-2
                     font-bold
                     text-white
                     transition
-                    hover:bg-cyan-300
-                "
+                    ${
+                      copiedLink === link.shortened
+                        ? "bg-[#3b3054]"
+                        : "bg-cyan-400 hover:bg-cyan-300"
+                    }
+                  `}
                 >
-                Shorten It!
+                  {copiedLink === link.shortened
+                    ? "Copied!"
+                    : "Copy"}
                 </button>
-            </form>
+              </div>
             </div>
+          ))}
         </div>
-      </>
-    )
+      )}
+    </section>
+  );
 }
