@@ -1,4 +1,4 @@
-import type { Project } from "../types/project";
+import type { Project } from "../types/projects";
 import Manage from "../assets/images/manage-desktop.jpg";
 import Loopstudios from "../assets/images/loopstudios-desktop.jpg";
 import Shortly from "../assets/images/shortly-desktop.jpg";

@@ -1,6 +1,7 @@
 import BgDesktop from "../../assets/bg/shortly/bg-shorten-desktop.svg";
 import BgMobile from "../../assets/bg/shortly/bg-shorten-mobile.svg";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type {FormEvent} from "react";
 
 interface ShortenedLink {
   original: string;

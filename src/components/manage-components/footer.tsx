@@ -1,5 +1,3 @@
-import Logo from "../../assets/icons/manage/logo.svg";
-
 export default function Footer() {
   return (
     <footer className="bg-manage-gray-strong text-white">

@@ -1,11 +1,3 @@
-import Logo from "../../assets/icons/shortly/logo.svg";
-
-import Facebook from "../../assets/icons/shortly/icon-facebook.svg";
-import Twitter from "../../assets/icons/shortly/icon-twitter.svg";
-import Pinterest from "../../assets/icons/shortly/icon-pinterest.svg";
-import Instagram from "../../assets/icons/shortly/icon-instagram.svg";
-
-
 
 const footerLinks = {
   Features: [
@@ -27,28 +19,7 @@ const footerLinks = {
 };
 
 
-const socialLinks = [
-  {
-    icon: Facebook,
-    href: "#",
-    alt: "Facebook",
-  },
-  {
-    icon: Twitter,
-    href: "#",
-    alt: "Twitter",
-  },
-  {
-    icon: Pinterest,
-    href: "#",
-    alt: "Pinterest",
-  },
-  {
-    icon: Instagram,
-    href: "#",
-    alt: "Instagram",
-  },
-];
+
 
 export default function Footer() {
   return (
