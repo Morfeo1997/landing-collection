@@ -1,7 +1,6 @@
-// src/components/tidal-components/MainContent.tsx
-
 import React from "react";
 import AlbumCard from "./AlbumCard";
+import SectionHeader from "./SectionHeader";
 
 interface Album {
   image: string;
@@ -312,16 +311,10 @@ const MainContent: React.FC<MainContentProps> = ({ onPlay }) => {
   ) => (
     <section className="mb-8">
       {/* Encabezado de la sección */}
-      <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-bold text-white">{title}</h2>
-
-        <button
-          type="button"
-          className="text-sm text-[#b3b3b3] transition-colors hover:text-white"
-        >
-          Ver todos
-        </button>
-      </div>
+      <SectionHeader
+  		title={title}
+  		onSeeAll={() => console.log(`Ver todos: ${title}`)}
+		/>
 
       {/* Grid responsive */}
       <div
